@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+} */
+
+@layer utilities {
+  .vertical-line {
+    border-left: 2px solid hsl(223, 19%, 93%);
+    margin-left: -4px;
+  }
+
+  .contenedor {
+    grid-template-areas:
+      "head head"
+      "main main"
+      "score reply";
+  }
+
+  .form {
+    grid-template-areas:
+      "form-control form-control"
+      "profile send";
+  }
+
+  @media screen and (min-width: 1024px) {
+    .contenedor,
+    .form {
+      grid-template-columns: auto 1fr auto;
+    }
+    .contenedor {
+      grid-template-areas:
+        "score head reply"
+        "score main main";
+    }
+    .form {
+      grid-template-areas: "profile form-control form-control send";
+    }
+  }
+
+  .head {
+    grid-area: head;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .score {
+    grid-area: score;
+  }
+
+  .reply {
+    grid-area: reply;
+  }
+
+  .form-control {
+    grid-area: form-control;
+  }
+  .profile {
+    grid-area: profile;
+  }
+  .send {
+    grid-area: send;
+  }
+}
