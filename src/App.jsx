@@ -7,8 +7,6 @@ import { reducer } from "./reducer/reducer.jsx";
 import { UserContext } from "./UserContext.jsx";
 import { ModalLayout } from "./components/ModalLayout";
 
-import "./App.css";
-
 const sortCommentsByScore = (comments) => {
   return comments.sort((a, b) => b.score - a.score);
 };
