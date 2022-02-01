@@ -21,7 +21,7 @@ export const CommentCard = ({ comment = {}, setShowForm = {}}) => {
   }, [comments]);
 
   return (
-    <div className="bg-white rounded-2xl px-5 py-4 my-5">
+    <div className="bg-white rounded-2xl p-5 my-5">
       <div className="grid contenedor gap-5 justify-items-start">
         <div className="header flex items-center text-lg lg:text-xl space-x-4 > *">
           <a href="#">

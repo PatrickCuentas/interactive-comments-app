@@ -16,7 +16,7 @@ module.exports = {
       rubik: ["Rubik"],
     },
     screens: {
-      lg: "990px",
+      lg: "800px",
     },
     extend: {},
   },
