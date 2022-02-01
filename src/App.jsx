@@ -1,4 +1,4 @@
-import { useState, useReducer, useEffect } from "react";
+import { useState, useReducer} from "react";
 import { Comment } from "./components/Comment";
 import { MyComment } from "./components/MyComment.jsx";
 import { Form } from "./components/Form.jsx";

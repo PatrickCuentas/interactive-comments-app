@@ -15,6 +15,9 @@ module.exports = {
     fontFamily: {
       rubik: ["Rubik"],
     },
+    screens: {
+      lg: "990px",
+    },
     extend: {},
   },
   plugins: [],

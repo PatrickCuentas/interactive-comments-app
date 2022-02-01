@@ -42,7 +42,7 @@ export const MyComment = ({ comment = {} }) => {
   }, [comments]);
 
   return (
-    <div className="bg-white rounded-2xl p-5 my-5">
+    <div className="bg-white rounded-2xl px-5 py-4 my-5">
       <div className="grid contenedor gap-5 justify-items-start ">
         <div className="head flex items-center text-xl space-x-4 > *">
           <a href="#">
@@ -54,11 +54,11 @@ export const MyComment = ({ comment = {} }) => {
               you
             </span>
           </div>
-          <p className="text-grayish-blue">{createdAt}</p>
+          <p className="text-grayish-blue min-w-[120px]">{createdAt}</p>
         </div>
         <div className="main overflow-hidden justify-self-stretch">
           {!isEditing ? (
-            <p className="text-xl text-grayish-blue break-all">
+            <p className="text-xl text-grayish-blue w-[95%]">
               {comment.hasOwnProperty("replyingTo") && (
                 <span className="text-moderate-blue font-bold">
                   @{comment.replyingTo}
