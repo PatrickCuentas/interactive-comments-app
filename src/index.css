@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-} */
+@layer base {
+    html{
+      font-size: 14.5px;   
+    }
+}
 
 @layer utilities {
   .vertical-line {
